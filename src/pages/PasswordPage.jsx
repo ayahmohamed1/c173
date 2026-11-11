@@ -26,7 +26,6 @@ const LockHeartIcon = () => (
 export default function PasswordPage({ onSuccess, content }) {
   const p = content?.password || {}
   const targetCode = String(p.code || '1122').trim()
-  const stickerSrc = p.sticker || '/images/hello-kitty-crying.jpg'
   const errorMessages = Array.isArray(p.errorMessages) && p.errorMessages.length > 0
     ? p.errorMessages
     : [
@@ -194,7 +193,6 @@ export default function PasswordPage({ onSuccess, content }) {
             })}
           </motion.div>
 
-          {/* Feedback section: Hello Kitty sticker & message */}
           <AnimatePresence mode="wait">
             {showFeedback && !success && (
               <motion.div 
@@ -205,18 +203,7 @@ export default function PasswordPage({ onSuccess, content }) {
                 exit={{ opacity: 0, scale: 0.85 }}
                 transition={{ type: 'spring', stiffness: 350, damping: 22 }}
               >
-                <div className={styles.stickerCard}>
-                  <motion.div 
-                    className={styles.stickerImageWrapper}
-                    animate={{ rotate: [-2, 2, -2] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                  >
-                    <img 
-                      src={stickerSrc} 
-                      alt="Hello Kitty crying" 
-                      className={styles.kittySticker} 
-                    />
-                  </motion.div>
+                <div className={styles.feedbackCard}>
                   <p className={styles.errorText} dir="auto">
                     {errorMessage}
                   </p>
@@ -232,11 +219,6 @@ export default function PasswordPage({ onSuccess, content }) {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
               >
-                <img 
-                  src="/images/hello-kitty-shy.jpg" 
-                  alt="Hello Kitty shy" 
-                  className={styles.kittySuccessSticker} 
-                />
                 <div className={styles.successText}>
                   unlocked! ♡
                 </div>

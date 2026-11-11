@@ -28,7 +28,6 @@ export default function FlowersPage({ back, content }) {
             ))}
           </div>
 
-          {/* Center Hello Kitty with flowers */}
           <motion.div
             className={styles.flowerCenter}
             initial={{ opacity: 0, scale: 0.7 }}
@@ -40,11 +39,7 @@ export default function FlowersPage({ back, content }) {
               animate={{ y: [0, -8, 0], rotate: [-2, 2, -2] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <img 
-                src="/images/hello-kitty-flowers.jpg" 
-                alt="Hello Kitty with flowers" 
-                className={styles.kittyFlowerImg} 
-              />
+              <span className={styles.flowerSymbol} aria-hidden="true">🌷</span>
             </motion.div>
             <div className={styles.flowerName} dir="auto">{f.flowerName}</div>
             <div className={styles.flowerSub} dir="auto">{f.flowerSubtitle}</div>

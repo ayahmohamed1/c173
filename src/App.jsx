@@ -31,9 +31,13 @@ export default function App() {
   return (
     <>
       <MusicToggle src={content.music} />
+      <div className="floral-frame" aria-hidden="true">
+        <div className="floral-frame__edge floral-frame__edge--left" />
+        <div className="floral-frame__edge floral-frame__edge--right" />
+      </div>
 
       <AnimatePresence mode="wait">
-        <motion.div key={page} {...fade}>
+        <motion.div key={page} {...fade} className="app-stage">
 
           {page === 'password' && (
             <PasswordPage

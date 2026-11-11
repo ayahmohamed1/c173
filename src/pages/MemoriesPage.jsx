@@ -14,22 +14,6 @@ export default function MemoriesPage({ back, content }) {
         {/* dashed border line top */}
         <div className={styles.dashedTop} />
 
-        {/* Hello Kitty with camera sticker */}
-        <motion.div 
-          className={styles.kittyCameraWrapper}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <motion.img 
-            src="/images/hello-kitty-camera.jpg" 
-            alt="Hello Kitty with camera" 
-            className={styles.kittyCameraImg}
-            animate={{ rotate: [-2, 2, -2] }}
-            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-          />
-        </motion.div>
-
         <motion.div
           className={styles.strip}
           initial={{ opacity: 0 }}
@@ -49,7 +33,7 @@ export default function MemoriesPage({ back, content }) {
               {img.tag && <span className={styles.tag}>{img.tag}</span>}
               {broken[i] ? (
                 <div className={styles.placeholder}>
-                  <img src="/images/hello-kitty-camera.jpg" alt="camera" className={styles.placeholderImg} />
+                  <span className={styles.placeholderIcon} aria-hidden="true">📷</span>
                 </div>
               ) : (
                 <img

@@ -8,15 +8,14 @@ const content = {
 
   // --- Secret Date / Password Protection ---
   password: {
-    code: '1122',
+    code: '2009',
     title: 'enter a secret date',
     subtitle: 'a date only we know ♡',
     buttonText: 'UNLOCK ♡',
     errorMessages: [
       'no babee!',
-      'no try 1122',
+      'no try 2009',
     ],
-    sticker: '/images/hello-kitty-crying.jpg',
   },
 
   welcome: {
@@ -36,10 +35,10 @@ const content = {
     title: 'pick a gift',
     subtitle: 'choose one to open ↓',
     items: [
-      { id: 'memories', icon: '📸', sticker: '/images/hello-kitty-camera.jpg', label: 'Captured\nMemories' },
-      { id: 'flowers', icon: '🌷', sticker: '/images/hello-kitty-flowers.jpg', label: 'Virtual\nFlowers' },
-      { id: 'song', icon: '🎵', sticker: '/images/hello-kitty-music.jpg', label: 'our\nsong' },
-      { id: 'letter', icon: '💌', sticker: '/images/hello-kitty-cake.jpg', label: 'Love\nLetter' },
+      { id: 'memories', icon: '📸', label: 'Captured\nMemories' },
+      { id: 'flowers', icon: '🌷', label: 'Virtual\nFlowers' },
+      { id: 'song', icon: '🎵', label: 'our\nsong' },
+      { id: 'letter', icon: '💌', label: 'Love\nLetter' },
     ],
   },
 
@@ -54,6 +53,7 @@ const content = {
       { src: '/images/memory5.jpg', label: '❤️', tag: 'always' },
       { src: '/images/memory6.jpg', label: '❤️', tag: 'mine' },
       { src: '/images/memory7.jpg', label: '❤️', tag: 'us' },
+      { src: '/images/memory8.jpg', label: '❤️', tag: 'us' },
     ],
   },
 
@@ -68,11 +68,11 @@ const content = {
       `"I love you and every little thing about you ♡"`,
       `"I get lost in your eyes; nothing else compares ✨"`,
       `"Everything sweet and beautiful reminds me of you 🌷"`,
-      `"The mother of my future kids ♥️"`,
+      `"you are my favorite person♥️"`,
       `"The heart and warmth of my home 🏡"`,
-      `"My wife and my greatest pride 👑"`,
+      `"you are my happiness♡"`,
       `"My whole world and everything in it 💫"`,
-      `"My family, my home, and my everything 💕"`,
+      `"my reason to smile 💕"`,
     ],
   },
 
@@ -90,13 +90,7 @@ const content = {
   letter: {
     title: 'a letter',
     returnButton: 'RETURN',
-    message: `To my beloved,
-
-Happy Birthday to the most precious person in my heart. You are my greatest blessing, my sweetest angel, and my future wife.
-
-Your happiness is my happiness, and seeing my princess smile is all I ever want. May you always shine bright and reach the highest heights, my beautiful doctor.
-
-Happy Birthday, my babe ♥️`,
+    message: `Happy birthday, my love! ❤️ I hope your day is as beautiful and special as you are. I want you to know that I’ll always love you, through every moment, every situation, and every chapter of life. No matter what happens or how things change, my love for you will always remain the same. I hope you’ll always be by my side, because having you in my life means more to me than words could ever express. ❤️`,
     signoff: 'I love you always,',
     signature: 'Your love ♡',
   },

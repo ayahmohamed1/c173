@@ -42,11 +42,7 @@ export default function MenuPage({ go, back, content }) {
               onClick={() => go(item.id)}
             >
               <div className={styles.gridIcon}>
-                {item.sticker ? (
-                  <img src={item.sticker} alt={item.label} className={styles.menuSticker} />
-                ) : (
-                  <span>{item.icon}</span>
-                )}
+                <span aria-hidden="true">{item.icon}</span>
               </div>
               <span className={styles.gridLabel}>{item.label}</span>
             </motion.button>

@@ -1,9 +1,9 @@
 .container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: var(--paper);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,20 +24,8 @@
   border-radius: 28px;
   max-width: 440px;
   width: 100%;
-  box-shadow: 0 8px 30px rgba(255, 77, 121, 0.08);
+  box-shadow: 0 8px 30px rgba(133, 91, 113, 0.08);
   backdrop-filter: blur(10px);
-}
-
-.kittyStickerWrap {
-  margin-bottom: 0.8rem;
-}
-
-.welcomeKittySticker {
-  width: 110px;
-  height: 110px;
-  object-fit: contain;
-  mix-blend-mode: multiply;
-  filter: drop-shadow(0 4px 12px rgba(255, 77, 121, 0.2));
 }
 
 .textGroup {

@@ -11,18 +11,6 @@ export default function NoThanksPage({ back, content }) {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 130, damping: 14 }}
       >
-        <motion.div
-          animate={{ rotate: [-4, 4, -4] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-          className={styles.kittyWrapper}
-        >
-          <img 
-            src="/images/hello-kitty-crying.jpg" 
-            alt="Hello Kitty crying" 
-            className={styles.kittyImg}
-          />
-        </motion.div>
-
         <motion.p
           className={styles.message}
           initial={{ opacity: 0, x: -20 }}

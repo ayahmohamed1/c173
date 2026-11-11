@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  background: var(--paper);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@
 .remindsText {
   font-family: var(--font-hand);
   font-size: clamp(1.2rem, 4vw, 1.5rem);
-  color: var(--text);
+  color: var(--cream);
   text-align: center;
   font-weight: 600;
 }
@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-.kittyMusicContainer {
+.musicArtworkContainer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -55,16 +55,22 @@
   border: 2px solid var(--red-pale);
   border-radius: 28px;
   padding: 1rem 1.5rem;
-  box-shadow: 0 8px 24px rgba(255, 77, 121, 0.12);
+  box-shadow: 0 8px 24px rgba(133, 91, 113, 0.12);
 }
 
-.kittyMusicImg {
+.musicSymbol {
   width: 160px;
   height: 160px;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 2px solid var(--red-pale);
-  box-shadow: 0 6px 18px rgba(255, 77, 121, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  line-height: 1;
+}
+
+.musicArtworkContainer {
+  min-width: 190px;
+  min-height: 190px;
 }
 
 .musicNotesWrap {
@@ -98,7 +104,7 @@
   align-items: center;
   gap: 15px;
   width: 100%;
-  box-shadow: 0 4px 18px rgba(255, 77, 121, 0.12);
+  box-shadow: 0 4px 18px rgba(133, 91, 113, 0.12);
   justify-content: space-between;
 }
 
@@ -116,7 +122,7 @@
   font-size: 1.1rem;
   flex-shrink: 0;
   transition: all 0.2s ease;
-  box-shadow: 0 3px 10px rgba(255, 77, 121, 0.15);
+  box-shadow: 0 3px 10px rgba(133, 91, 113, 0.15);
 }
 
 .playBtn:hover {
@@ -159,7 +165,7 @@
 .highlight {
   font-family: var(--font-hand);
   font-size: clamp(1.1rem, 4vw, 1.4rem);
-  color: var(--text);
+  color: var(--cream);
   text-align: center;
 }
 
@@ -177,7 +183,7 @@
 .title {
   font-family: var(--font-hand);
   font-size: clamp(2rem, 7vw, 3rem);
-  color: var(--red);
+  color: var(--cream);
   font-weight: 700;
   transform: rotate(-1.5deg);
   display: inline-block;

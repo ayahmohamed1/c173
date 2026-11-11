@@ -10,20 +10,6 @@ export default function WelcomePage({ go, content, name }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.45, ease: 'easeOut' }}
       >
-        {/* Shy Hello Kitty Sticker on Welcome Card */}
-        <motion.div 
-          className={styles.kittyStickerWrap}
-          animate={{ y: [0, -6, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          <img 
-            src="/images/hello-kitty-shy.jpg" 
-            alt="Hello Kitty shy" 
-            className={styles.welcomeKittySticker} 
-          />
-        </motion.div>
-        
-        {/* Hello greeting */}
         <div className={styles.textGroup}>
           <h1 className={styles.helloText}>{content.welcome.greeting}</h1>
           <h1 className={styles.loveText}>{name}!</h1>

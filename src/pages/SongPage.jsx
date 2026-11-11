@@ -58,20 +58,15 @@ export default function SongPage({ back, content }) {
           <p className={styles.remindsText} dir="auto">{s.remindsText}</p>
 
           <div className={styles.mainContent}>
-            {/* Hello Kitty with headphones sticker */}
             <motion.div
-              className={styles.kittyMusicContainer}
+              className={styles.musicArtworkContainer}
               animate={playing ? { 
                 y: [0, -6, 0],
                 rotate: [-2, 2, -2]
               } : { y: 0, rotate: 0 }}
               transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <img 
-                src="/images/hello-kitty-music.jpg" 
-                alt="Hello Kitty listening to music" 
-                className={styles.kittyMusicImg}
-              />
+              <span className={styles.musicSymbol} aria-hidden="true">🎵</span>
               {playing && (
                 <div className={styles.musicNotesWrap}>
                   <motion.span 

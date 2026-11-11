@@ -10,22 +10,6 @@ export default function LetterPage({ back, content }) {
       <div className={styles.inner}>
         <div className={styles.dashedTop} />
 
-        {/* Hello Kitty with birthday cake sticker at top of letter */}
-        <motion.div 
-          className={styles.kittyCakeWrapper}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <motion.img 
-            src="/images/hello-kitty-cake.jpg" 
-            alt="Hello Kitty with birthday cake" 
-            className={styles.kittyCakeImg}
-            animate={{ y: [0, -5, 0] }}
-            transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-          />
-        </motion.div>
-
         <motion.div
           className={styles.letter}
           initial={{ opacity: 0, y: 20 }}

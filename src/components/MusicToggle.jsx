@@ -54,7 +54,7 @@ export default function MusicToggle({ src }) {
         alignItems: 'center',
         justifyContent: 'center',
         fontSize: '1rem',
-        boxShadow: '0 3px 12px rgba(255,77,121,0.22)',
+        boxShadow: '0 3px 12px rgba(133,91,113,0.22)',
         transition: 'all 0.25s ease',
         opacity: ready ? 1 : 0.5,
       }}
